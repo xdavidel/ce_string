@@ -9,5 +9,7 @@ int main()
 	str2.Assign(str1);
 
 	str1.Append(str2);
+
+	system("pause");
 	return 0;
 }

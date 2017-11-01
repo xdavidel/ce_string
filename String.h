@@ -11,13 +11,13 @@ class String
 	String();
 	~String();
 
-	size_t GetLength();
-	void Assign(String otherString);
-	void Assign(char* source);
-	char CharAt(size_t index);
-	void Append(String otherString);
-	int Compare(String otherString);
-	bool IsEmpty();
+	size_t GetLength() const;
+	void Assign(const String&);
+	void Assign(const char*);
+	char CharAt(size_t) const;
+	void Append(const String&);
+	int Compare(const String&) const;
+	bool IsEmpty() const;
 	void Clear();
 };
 
